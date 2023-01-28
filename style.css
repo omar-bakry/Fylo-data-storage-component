@@ -67,9 +67,10 @@ ul.icons li {
     align-items: center;
 }
 .gb{
-    width: 160px;
+    width: 180px;
     height: 70px;
     background-color: #fff;
+    padding: 6px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,5 +124,60 @@ p{
     font-weight: 700;
 }
 .prog{
-    marbot
+    margin-bottom: 20px;
+}
+.cont {
+    position: relative;
+}
+.cont:after {
+    visibility: hidden;
+    content: "";
+    border: 30px solid red;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    right: -39px;
+    bottom: -34px;
+}
+@media only screen and (min-width:768px){
+    section {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .top, .bottom {
+        margin-bottom: unset;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .gb {
+    left: unset;
+    right: 30px;
+    bottom: unset;
+    top: -55px;
+    transform: none;
+    }
+    .bottom {
+        padding: 20px 30px;
+        min-width: 30vw;
+    }
+    .top {
+        padding-right:100px;
+    }
+    p {
+        text-align: start;
+        margin-left: unset;
+    }
+    body {
+    background-image: url(./images/bg-desktop.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-color: hsl(229, 57%, 11%);
+    }
+    .cont {
+        display: flex;
+        align-items: center;
+    }
+    .cont:after {
+        visibility: visible;
+    } 
 }
