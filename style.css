@@ -52,6 +52,7 @@ ul.icons li {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .bottom_gb,.left,.right{
@@ -73,10 +74,11 @@ ul.icons li {
     justify-content: center;
     align-items: center;
     font-weight:bolder;
-    position: relative;
-    left: 40px;
-    top: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
     border-radius: 8px;
+    transform: translateX(-50%);
 }
 .gb1{
     font-weight: bold;
@@ -119,4 +121,7 @@ p{
 }
 .left, .right {
     font-weight: 700;
+}
+.prog{
+    marbot
 }
